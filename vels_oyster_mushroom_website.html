@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vel's Oyster Mushroom | Fresh & Dried Mushrooms in Karur</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7faf7;
+      color: #2f3e2f;
+    }
+    header {
+      background: #e8f3e8;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 200px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #2b5d34;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .contact {
+      background: #e8f3e8;
+      border-radius: 8px;
+      padding: 30px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2b5d34;
+      color: white;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 20px;
+      background: #2b5d34;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="VOM Logo .jpeg" alt="Vel's Oyster Mushroom Logo" />
+  <h1>Vel's Oyster Mushroom</h1>
+  <p>Fresh • Natural • Locally Grown in Karur</p>
+</header>
+
+<div style="text-align:center; padding:10px;">
+  <button onclick="setLang('en')">English</button>
+  <button onclick="setLang('ta')">தமிழ்</button>
+</div>
+
+<section id="about">
+  <h2 class="en">About Us</h2>
+  <h2 class="ta" style="display:none;">எங்களை பற்றி</h2>
+  <p class="en">Vel's Oyster Mushroom is a local mushroom farm based in Karur, providing high-quality fresh and dried oyster mushrooms. We supply both retail customers and restaurants.</p>
+  <p class="ta" style="display:none;">Vel's Oyster Mushroom கரூரில் அமைந்துள்ள ஒரு உள்ளூர் காளான் பண்ணை. புதிய மற்றும் உலர்ந்த ஓய்ஸ்டர் காளான்களை சுத்தமாக வழங்குகிறோம்.</p>
+</section>
+
+<section>
+  <h2>Our Products & Prices</h2>
+  <div class="services">
+    <div class="card">
+      <img src="Fresh Mushroom Box.png" alt="Fresh Oyster Mushroom" style="width:100%; border-radius:6px;" />
+      <h3>Fresh Oyster Mushrooms</h3>
+      <p>Freshly harvested, clean and natural.</p>
+      <p><strong>Price:</strong> ₹50 / 200 grams<br />Minimum Order: 1 kg</p>
+    </div>
+    <div class="card">
+      <img src="Dried Mushroom Box.png" alt="Dried Oyster Mushroom" style="width:100%; border-radius:6px;" />
+      <h3>Dried Oyster Mushrooms</h3>
+      <p>Preservative-free, long shelf life.</p>
+      <p><strong>Price:</strong> ₹200 / 100 grams</p>
+    </div>
+    <div class="card">
+      <h3>Wholesale Supply</h3>
+      <p>Bulk supply for hotels, restaurants, and catering services in Karur.</p>
+    </div>
+    <div class="card">
+      <h3>Retail Sales</h3>
+      <p>Home delivery available within 10 km radius (Karur).</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Delivery Area</h2>
+  <p>
+    📍 City: Karur<br />
+    🚚 Delivery available within 10 km radius only
+  </p>
+</section>
+
+<section class="contact">
+  <h2>WhatsApp Order Form</h2>
+  <form onsubmit="sendWhatsApp(); return false;">
+    <input type="text" id="name" placeholder="Your Name" required style="width:100%; padding:10px; margin:5px 0;" />
+    <input type="text" id="product" placeholder="Product (Fresh / Dried)" required style="width:100%; padding:10px; margin:5px 0;" />
+    <input type="text" id="qty" placeholder="Quantity" required style="width:100%; padding:10px; margin:5px 0;" />
+    <input type="text" id="location" placeholder="Delivery Location" required style="width:100%; padding:10px; margin:5px 0;" />
+    <button type="submit" class="button">Send Order on WhatsApp</button>
+  </form>
+
+  <h2>Contact Us</h2>
+  <p>📞 9500824460, 9360362284<br />📧 velsoystermushroom@gmail.com</p>
+</section>
+
+<footer>
+  <p>© 2026 Vel's Oyster Mushroom | Natural & Organic Farming</p>
+</footer>
+
+</body>
+</html>
