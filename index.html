@@ -133,29 +133,7 @@ width="100%" height="300" style="border:0;" loading="lazy"></iframe>
 
 
 <script>
-function sendWhatsApp() {
-  var name = document.getElementById("custName").value;
-  var product = document.getElementById("product").value;
-  var quantity = document.getElementById("quantity").value;
-  var location = document.getElementById("location").value;
 
-  if(name === "" || product === "" || quantity === "" || location === "") {
-    alert("Please fill all details");
-    return;
-  }
-
-  var message =
-    "Hello Vel's Oyster Mushroom,%0A" +
-    "Name: " + name + "%0A" +
-    "Product: " + product + "%0A" +
-    "Quantity: " + quantity + "%0A" +
-    "Location: " + location + "%0A" +
-    "Please confirm availability.";
-
-  var phoneNumber = "919500824460";
-  var url = "https://wa.me/" + phoneNumber + "?text=" + message;
-  window.open(url, "_blank");
-}
 </script>
 
 </html>
